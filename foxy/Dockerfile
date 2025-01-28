@@ -42,7 +42,7 @@ RUN sudo rosdep init && \
     rosdep update
 
 RUN echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc && \
-    echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc \
+    echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc && \
 	echo "source /usr/share/gazebo-11/setup.bash" >> ~/.bashrc
 	
 
