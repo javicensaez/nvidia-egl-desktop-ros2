@@ -1,0 +1,1 @@
+controller_joint_names: [ 'rueda_izquierda_joint', 'rueda_derecha_joint' ]

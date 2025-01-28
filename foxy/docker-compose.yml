@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  nvidia-egl-desktop-ros2:
+    build: .
+    runtime: nvidia
+    environment:
+      - SIZEW=1920
+      - SIZEH=1080
+      - PASSWD=mypasswd
+      - BASIC_AUTH_PASSWORD=mypasswd
+      - NOVNC_ENABLE=true
+    ports:
+      - "6080:8080"
+    shm_size: '1024m'
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./SocialTech_ros2_ws:/home/user/SocialTech_ros2_ws
+

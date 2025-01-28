@@ -30,6 +30,9 @@ RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
 RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
         python3-colcon-common-extensions \
         python3-rosdep \
+        ros-foxy-xacro \
+        ros-foxy-gazebo-ros-pkgs \
+        ros-foxy-joint-state-publisher \
         && \
     sudo apt-get clean && \
     sudo rm -rf /var/lib/apt/lists/*
