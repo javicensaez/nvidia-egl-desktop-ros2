@@ -3,7 +3,11 @@ version: '3.8'
 services:
   nvidia-egl-desktop-ros2:
     build: .
-    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
     environment:
       - SIZEW=1920
       - SIZEH=1080
