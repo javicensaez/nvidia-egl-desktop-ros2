@@ -33,7 +33,8 @@ RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
         ros-foxy-xacro \
         ros-foxy-gazebo-ros-pkgs \
         ros-foxy-joint-state-publisher \
-        && \
+       	ros-foxy-slam-toolbox \ 
+	&& \
     sudo apt-get clean && \
     sudo rm -rf /var/lib/apt/lists/*
 

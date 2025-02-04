@@ -18,6 +18,8 @@
 
   <!-- Import Gazebo elements, including Gazebo colors -->
   <xacro:include filename="$(find socialtech_challenge)/urdf/tracer2.gazebo" />
+  
+
 
   <link
     name="base_link">
@@ -59,6 +61,9 @@
       </geometry>
     </collision>
   </link>
+  
+
+    
   <link
     name="rueda_izquierda_Link">
     <inertial>

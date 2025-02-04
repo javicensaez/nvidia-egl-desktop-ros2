@@ -8,10 +8,14 @@
       <wheel_separation>0.335</wheel_separation>
       <wheel_diameter>0.125</wheel_diameter>
       <torque>20</torque>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>false</publish_wheel_tf>
       <command_Topic>cmd_vel</command_Topic>
       <odometry_Topic>odom</odometry_Topic>
       <odometry_frame>odom</odometry_frame>
       <robot_base_frame>base_link</robot_base_frame>
+      
     </plugin>
   </gazebo>
   
